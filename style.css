@@ -1,60 +1,99 @@
-/* Styling the overall page background */
+/* Import Google Font */
+@import url('https://googleapis.com');
+
+/* Overall page background and alignment */
 body {
     background-color: #745a46;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    transition: background-color 0.5s ease; /* Smoothly transitions background colors */
+    transition: background-color 0.5s ease; /* Smooth color transitions */
 }
 
-/* Beautiful profile layout box */
+/* Main Profile Card Container */
 .profile-card {
     background-color: #ffffff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
     text-align: center;
-    max-width: 400px;
+    max-width: 380px;
     width: 90%;
 }
 
-/* Round profile picture styling */
+/* Circular profile picture slot */
 .profile-img {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     border: 4px solid #286e98;
+    object-fit: cover;
     margin-bottom: 15px;
 }
 
 h1 {
     color: #2c5047;
     font-size: 24px;
-    margin-bottom: 10px;
+    font-weight: 600;
+    margin: 10px 0 5px 0;
 }
 
-p {
+.tagline {
+    color: #888888;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+/* About Me Paragraph Section */
+.about-section {
     color: #555555;
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.6;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-/* Button styling */
+/* Interactive Color Button */
 .my-btn {
     background-color: #286e98;
-    color: rgb(259, 44, 92);
-    padding: 12px 24px;
-    font-size: 16px;
-    font-weight: bold;
+    color: #ffffff;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 600;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s, background-color 0.2s;
+    margin-bottom: 25px;
 }
 
 .my-btn:hover {
     background-color: #1e5272;
+    transform: translateY(-2px);
+}
+
+/* Social Media Links Section */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    border-top: 1px solid #eeeeee;
+    padding-top: 20px;
+}
+
+.social-links a {
+    color: #286e98;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #2c5047;
 }
