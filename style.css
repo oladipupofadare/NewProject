@@ -1,24 +1,60 @@
+/* Styling the overall page background */
 body {
     background-color: #745a46;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    transition: background-color 0.5s ease; /* Smoothly transitions background colors */
+}
+
+/* Beautiful profile layout box */
+.profile-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding-top: 50px;
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Round profile picture styling */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #286e98;
+    margin-bottom: 15px;
 }
 
 h1 {
     color: #2c5047;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
+p {
+    color: #555555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
 .my-btn {
-    background-color: #206e98;
-    color: rgb(159, 44, 92);
-    padding: 10px 20px;
+    background-color: #286e98;
+    color: rgb(259, 44, 92);
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-    
+
 .my-btn:hover {
-    background-color: #415b76;
+    background-color: #1e5272;
 }
